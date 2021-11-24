@@ -110,8 +110,8 @@ mysqli_close($conn);
 
                     <div class="row">
                         <div class="col-sm-6" style="align-items:center; background-color:#fff; padding: 10px;">
-                            <img src="../images/home.png" height="50px" style="margin-left: 10px;">
-                            <b style="color:#2C3A57; font-size:20px;">Về trang chủ</b>
+                        <a href="home.php" class="navbar-brand"><img src="../images/home.png" height="50px" style="margin-left: 10px;">
+                            <b style="color:#2C3A57; font-size:20px;">Về trang chủ</b></a>
                         </div>
     
                         <div class="col-sm-6" id="search-container" style="background-color:#fff;">
@@ -335,7 +335,7 @@ if(isset($_REQUEST['search'])){
                             <b style="color:#2C3A57; font-size:12px; padding-right:10px;">Đã bao gồm 10% VAT</b>
                         </div>
                     </div>
-                    <button style="color: white; background-color:red; font-weight:bold; width:90%;margin-left:5%; margin-top:10px;margin-bottom:10px;">
+                    <button onclick="window.location.href='payment.php';" style="color: white; background-color:red; font-weight:bold; width:90%;margin-left:5%; margin-top:10px;margin-bottom:10px;">
                         Thanh toán
                     </button>
                 </div>
